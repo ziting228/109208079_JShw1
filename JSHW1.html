@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <script>
+        var inputOne; 
+        var rand = Math.floor((Math.random()*10)+1);
+        var check = false;
+
+        inputOne = window.prompt("Let's make a guess between 1 to 10!");
+
+        while (inputOne != rand){
+            document.body.style.backgroundColor = 'lightblue';
+            inputOne = window.prompt("Let's make a guess between 1 to 10!");
+        } 
+
+        document.body.style.backgroundColor = 'lightyellow';
+        document.write("You are correct! The answer is " + rand);
+        
+    </script>
+    
+</body>
+</html>
